@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.37.1](https://github.com/trycua/cua/compare/cua-driver-rs-v0.37.0...cua-driver-rs-v0.37.1) (2026-10-20)
+
+
+### Bug Fixes
+
+* **cua-driver:** accept the GNOME helper only from the session's Shell ([da87d3d](https://github.com/trycua/cua/commit/da87d3d92f41b934103c82a312834c92b856ce4f))
+* **cua-driver:** restrict Windows launch candidates to the receipt process family ([0b235ad](https://github.com/trycua/cua/commit/0b235ad57c75ec9b8c7d56721d16c1d81b531855)), closes [#5450](https://github.com/trycua/cua/issues/5450)
+* extract snapshot selection into a host-testable module and select only the receipt root and transitive descendants, including renamed children. Preserve the public API, exited-root ordering, list_descendants behavior (including PID 0), explicit UWP host resolution, and original receipt PID with empty windows when no eligible fallback exists. Remove the unused version-prefix matcher. ([0b235ad](https://github.com/trycua/cua/commit/0b235ad57c75ec9b8c7d56721d16c1d81b531855))
+
 ## [0.37.0](https://github.com/trycua/cua/compare/cua-driver-rs-v0.36.0...cua-driver-rs-v0.37.0) (2026-10-20)
 
 
